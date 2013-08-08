@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/whats_new_bg_03"
+    android:orientation="vertical"
+     >
+<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欢迎动画3 仅第一次安装 打开后显示"
+             />
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启新的出行之旅 点这个开始"
+            android:onClick="start"
+             />
+ <!--  android:background="@drawable/friendactivity_personalportrait" -->
+</LinearLayout>

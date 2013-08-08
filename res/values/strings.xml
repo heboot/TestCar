@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">剖解打车应用</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="show_addr">拖地图选上车点</string>
+
+    
+     <string name="whats_new_msg1">"如你所知，
+微信不只是一个聊天工具"</string>
+    <string name="whats_new_title2">"一切从照片开始
+你拍了一张照片"</string>
+    <string name="whats_new_title3">你就拥有了自己的相册</string>
+    <string name="whats_new_today">今天</string>
+    <string name="whats_new_yesterday">昨天</string>
+    <string name="whats_new_daybeforeyesterday">20</string>
+    <string name="whats_new_guangzhou">广州</string>
+</resources>

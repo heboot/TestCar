@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iphonetitle_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <Button
+            android:id="@+id/btn_title_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_normal"
+            android:text="菜单" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="打车app"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_order_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_normal"
+            android:text="历史" />
+    </RelativeLayout>
+
+    <!-- 使用自定义的侧滑布局，orientation必须为水平方向 -->
+
+    <com.test.utils.SlidingLayout
+        android:id="@+id/slidingLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/menu"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/identification_address"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+             >
+            
+             <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green_off"
+                android:text="个人资料"
+                android:textColor="@color/white" />
+              <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green_off"
+                android:text="设置"
+                android:textColor="@color/white" />
+               <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green_off"
+                android:text="分享"
+                android:textColor="@color/white" />
+                <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green_off"
+                android:text="最新版本"
+                android:textColor="@color/white" />
+                 <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green_off"
+                android:text="关于我们"
+                android:textColor="@color/white" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <com.test.utils.MyMapView
+                android:id="@id/bmapsView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                 >
+            </com.test.utils.MyMapView>
+
+            <TextView
+                android:id="@id/txt_show_addr"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/black"
+                android:drawableRight="@drawable/title_tag"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/show_addr"
+                android:textColor="@android:color/white"
+                android:textSize="13.0dip" />
+        </LinearLayout>
+    </com.test.utils.SlidingLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottommenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/identification_address"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起点："
+                android:textColor="@color/black_text" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/edt_userpoint"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_box" />
+
+                <ImageView
+                    android:id="@+id/editStartValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/editor_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal"
+			android:gravity="center"
+>
+
+            <Button
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btn_mylocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_mylocation" />
+            
+              <Button
+                         android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green_off"
+                android:text="下一步  (扬招)"
+                android:textColor="@color/white" />
+
+            <Button
+                         android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green_off"
+                android:text="附近车辆"
+                android:textColor="@color/white" />
+
+             <Button
+                         android:layout_marginLeft="5dp"
+                android:id="@+id/rim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green_off"
+                android:text="地标"
+                android:textColor="@color/white" />
+
+            <Button
+                         android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green_off"
+                android:text="更多"
+                android:textColor="@color/white" />
+
+         
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

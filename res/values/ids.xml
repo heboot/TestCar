@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="txt_show_addr" type="id"/>
+    <item name="bmapsView" type="id"/>
+    <item name="btn_showCar" type="id"/>
+    <item name="btn_getCar" type="id"/>
+    <item name="btn_book_order" type="id"/>
+    <item name="btn_landMark" type="id"/>
+    <item name="btn_more" type="id"/>
+
+</resources>
